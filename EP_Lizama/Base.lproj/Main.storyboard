@@ -17,8 +17,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Dl-4L-jRJ">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="956"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Dl-4L-jRJ">
+                                <rect key="frame" x="0.0" y="44" width="414" height="956"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6RT-PW-Yhc">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
@@ -78,32 +78,47 @@
                                             <constraint firstAttribute="width" constant="240" id="OmM-XH-gAW"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dYh-xy-Kxz">
-                                        <rect key="frame" x="20" y="548" width="177" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dYh-xy-Kxz">
+                                        <rect key="frame" x="20" y="548" width="177" height="284.5"/>
+                                        <string key="text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MBQ-BG-mzv">
-                                        <rect key="frame" x="217" y="548" width="177" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MBQ-BG-mzv">
+                                        <rect key="frame" x="217" y="548" width="177" height="284.5"/>
+                                        <string key="text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="i4v-7X-1iH">
+                                        <rect key="frame" x="20" y="892" width="374" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="zVb-Dr-fQH"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
                                 </subviews>
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstItem="oDQ-m1-c8H" firstAttribute="trailing" secondItem="pn6-ft-OHM" secondAttribute="trailing" id="14S-KC-BZJ"/>
+                                    <constraint firstItem="i4v-7X-1iH" firstAttribute="leading" secondItem="1Dl-4L-jRJ" secondAttribute="leading" constant="20" id="35O-Hv-VVf"/>
                                     <constraint firstItem="qhr-ba-jbz" firstAttribute="width" secondItem="TZQ-zX-4H5" secondAttribute="width" multiplier="1.03333" id="5gZ-IP-550"/>
                                     <constraint firstItem="yfx-BK-P26" firstAttribute="top" secondItem="TZQ-zX-4H5" secondAttribute="top" id="CGy-NA-dOc"/>
                                     <constraint firstAttribute="trailing" secondItem="yfx-BK-P26" secondAttribute="trailing" id="EnL-wE-oqo"/>
                                     <constraint firstItem="oDQ-m1-c8H" firstAttribute="top" secondItem="pn6-ft-OHM" secondAttribute="bottom" constant="20" id="HMX-eT-E6Y"/>
                                     <constraint firstItem="yfx-BK-P26" firstAttribute="width" secondItem="qhr-ba-jbz" secondAttribute="width" multiplier="1.01613" id="HWY-2g-Kr0"/>
                                     <constraint firstItem="6RT-PW-Yhc" firstAttribute="leading" secondItem="1Dl-4L-jRJ" secondAttribute="leading" id="Hnf-HB-yfp"/>
+                                    <constraint firstAttribute="bottom" secondItem="i4v-7X-1iH" secondAttribute="bottom" constant="30" id="Iwl-cj-sjT"/>
                                     <constraint firstItem="yfx-BK-P26" firstAttribute="leading" secondItem="qhr-ba-jbz" secondAttribute="trailing" id="JWs-FJ-3qw"/>
                                     <constraint firstItem="qhr-ba-jbz" firstAttribute="top" secondItem="TZQ-zX-4H5" secondAttribute="top" id="MkU-4f-jSr"/>
                                     <constraint firstItem="dYh-xy-Kxz" firstAttribute="leading" secondItem="1Dl-4L-jRJ" secondAttribute="leading" constant="20" id="Nfh-iQ-Huz"/>
                                     <constraint firstItem="6RT-PW-Yhc" firstAttribute="width" secondItem="1Dl-4L-jRJ" secondAttribute="width" id="Pvh-4B-fuo"/>
                                     <constraint firstItem="CTk-qp-sil" firstAttribute="centerX" secondItem="1Dl-4L-jRJ" secondAttribute="centerX" id="Vxw-N6-jvL"/>
+                                    <constraint firstAttribute="trailing" secondItem="i4v-7X-1iH" secondAttribute="trailing" constant="20" id="bIQ-7x-pjP"/>
+                                    <constraint firstItem="i4v-7X-1iH" firstAttribute="top" secondItem="dYh-xy-Kxz" secondAttribute="bottom" constant="59.5" id="bMU-7G-W3Y"/>
                                     <constraint firstItem="CTk-qp-sil" firstAttribute="top" secondItem="pn6-ft-OHM" secondAttribute="bottom" constant="127" id="bqF-IP-fPV"/>
                                     <constraint firstItem="pn6-ft-OHM" firstAttribute="top" secondItem="TZQ-zX-4H5" secondAttribute="bottom" constant="25" id="fPc-aC-85l"/>
                                     <constraint firstItem="6RT-PW-Yhc" firstAttribute="top" secondItem="1Dl-4L-jRJ" secondAttribute="top" id="gsp-OA-nYE"/>
@@ -119,6 +134,9 @@
                                     <constraint firstAttribute="trailing" secondItem="pn6-ft-OHM" secondAttribute="trailing" constant="20" id="ulZ-Wz-if9"/>
                                     <constraint firstItem="MBQ-BG-mzv" firstAttribute="width" secondItem="dYh-xy-Kxz" secondAttribute="width" id="yjw-k8-A8G"/>
                                 </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="GmZ-bt-wV2" appends="YES" id="ZVg-sx-q18"/>
+                                </connections>
                             </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -132,10 +150,16 @@
                     </view>
                     <size key="freeformSize" width="414" height="1000"/>
                     <connections>
+                        <outlet property="bottomScrollConst" destination="Xdx-em-YUX" id="awS-75-6kl"/>
                         <outlet property="txtMas" destination="pn6-ft-OHM" id="EHT-YQ-dsa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="GmZ-bt-wV2">
+                    <connections>
+                        <action selector="tapToClodeKeyboard:" destination="BYZ-38-t0r" id="H4r-rX-ec5"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="531.8840579710145" y="77.678571428571431"/>
         </scene>

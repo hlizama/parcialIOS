@@ -37,10 +37,65 @@ class ViewController: UIViewController {
         
     }
     
+    
+    @IBOutlet weak var bottomScrollConst: NSLayoutConstraint!
+    
+    @IBAction func tapToClodeKeyboard(_ sender: Any) {
+               self.view.endEditing(true)
+       }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+            super.viewWillAppear(animated)
+            
+            NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillShow(_:)), name: UIResponder.keyboardWillShowNotification, object: nil)
+            NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillHide(_:)), name: UIResponder.keyboardWillHideNotification, object: nil)
+        }
+        
+        override func viewDidAppear(_ animated: Bool) {
+            super.viewDidAppear(animated)
+        }
+        
+        
+        override func viewWillDisappear(_ animated: Bool) {
+            super.viewWillDisappear(animated)
+        }
+        
+        override func viewDidDisappear(_ animated: Bool) {
+            super.viewDidDisappear(animated)
+            
+            NotificationCenter.default.removeObserver(self)
+        }
+        
+        
+        @objc func keyboardWillShow(_ notification: Notification) {
+            
+            let keyboardFrame = notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? CGRect ?? .zero
+            let animationDuration = notification.userInfo?[UIResponder.keyboardAnimationDurationUserInfoKey] as? Double ?? 0
+            
+            UIView.animate(withDuration: animationDuration) {
+                self.bottomScrollConst.constant = keyboardFrame.height
+                self.view.layoutIfNeeded()
+            }
+        }
+        
+        @objc func keyboardWillHide(_ notification: Notification) {
+            
+            let animationDuration = notification.userInfo?[UIResponder.keyboardAnimationDurationUserInfoKey] as? Double ?? 0
+            
+            UIView.animate(withDuration: animationDuration) {
+                self.bottomScrollConst.constant = 0
+                self.view.layoutIfNeeded()
+            }
+
+        }
+    
+    
 
 
 }
