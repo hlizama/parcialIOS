@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F3BC444253A900200A05F7C /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3BC443253A900200A05F7C /* ViewController2.swift */; };
+		2F3BC447253A903E00A05F7C /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3BC446253A903E00A05F7C /* ViewController3.swift */; };
+		2F3BC44A253A905500A05F7C /* ViewController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3BC449253A905500A05F7C /* ViewController4.swift */; };
+		2F3BC44D253AA06A00A05F7C /* BoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3BC44C253AA06A00A05F7C /* BoxView.swift */; };
 		2F8ECDC22539F9DB00203517 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8ECDC12539F9DB00203517 /* AppDelegate.swift */; };
 		2F8ECDC42539F9DB00203517 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8ECDC32539F9DB00203517 /* SceneDelegate.swift */; };
 		2F8ECDC62539F9DB00203517 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8ECDC52539F9DB00203517 /* ViewController.swift */; };
@@ -16,6 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2F3BC443253A900200A05F7C /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
+		2F3BC446253A903E00A05F7C /* ViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController3.swift; sourceTree = "<group>"; };
+		2F3BC449253A905500A05F7C /* ViewController4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController4.swift; sourceTree = "<group>"; };
+		2F3BC44C253AA06A00A05F7C /* BoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxView.swift; sourceTree = "<group>"; };
 		2F8ECDBE2539F9DB00203517 /* EP_Lizama.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EP_Lizama.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F8ECDC12539F9DB00203517 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2F8ECDC32539F9DB00203517 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +71,10 @@
 				2F8ECDCA2539F9DC00203517 /* Assets.xcassets */,
 				2F8ECDCC2539F9DC00203517 /* LaunchScreen.storyboard */,
 				2F8ECDCF2539F9DC00203517 /* Info.plist */,
+				2F3BC443253A900200A05F7C /* ViewController2.swift */,
+				2F3BC446253A903E00A05F7C /* ViewController3.swift */,
+				2F3BC449253A905500A05F7C /* ViewController4.swift */,
+				2F3BC44C253AA06A00A05F7C /* BoxView.swift */,
 			);
 			path = EP_Lizama;
 			sourceTree = "<group>";
@@ -137,9 +149,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F3BC447253A903E00A05F7C /* ViewController3.swift in Sources */,
+				2F3BC44A253A905500A05F7C /* ViewController4.swift in Sources */,
 				2F8ECDC62539F9DB00203517 /* ViewController.swift in Sources */,
+				2F3BC444253A900200A05F7C /* ViewController2.swift in Sources */,
 				2F8ECDC22539F9DB00203517 /* AppDelegate.swift in Sources */,
 				2F8ECDC42539F9DB00203517 /* SceneDelegate.swift in Sources */,
+				2F3BC44D253AA06A00A05F7C /* BoxView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

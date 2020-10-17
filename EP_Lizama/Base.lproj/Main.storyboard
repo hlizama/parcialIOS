@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jCY-XC-mLP">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
@@ -18,17 +18,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Dl-4L-jRJ">
-                                <rect key="frame" x="0.0" y="44" width="414" height="956"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="912"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6RT-PW-Yhc">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="0.0"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="omQ-9Q-dfk"/>
+                                            <constraint firstAttribute="height" id="omQ-9Q-dfk"/>
                                         </constraints>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TZQ-zX-4H5">
-                                        <rect key="frame" x="0.0" y="50" width="134.5" height="48"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="134.5" height="48"/>
                                         <color key="backgroundColor" name="AccentColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="48" id="iiS-9z-ouE"/>
@@ -36,9 +36,12 @@
                                         <state key="normal" title="Opción 1">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="awd-Jx-gao" kind="show" id="VOp-H9-fx3"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qhr-ba-jbz">
-                                        <rect key="frame" x="134.5" y="50" width="138.5" height="48"/>
+                                        <rect key="frame" x="134.5" y="0.0" width="138.5" height="48"/>
                                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="48" id="OMs-Xh-yyU"/>
@@ -46,9 +49,12 @@
                                         <state key="normal" title="Opción 2">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="UKd-bp-0Wg" kind="show" id="33H-3L-C9B"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yfx-BK-P26">
-                                        <rect key="frame" x="273" y="50" width="141" height="48"/>
+                                        <rect key="frame" x="273" y="0.0" width="141" height="48"/>
                                         <color key="backgroundColor" systemColor="systemTealColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="48" id="ad7-ee-yDg"/>
@@ -56,22 +62,25 @@
                                         <state key="normal" title="Opción 3">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="L9e-zq-zMT" kind="show" id="Ts2-aL-wtd"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has ..." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pn6-ft-OHM">
-                                        <rect key="frame" x="20" y="123" width="374" height="61"/>
+                                        <rect key="frame" x="20" y="73" width="374" height="61"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oDQ-m1-c8H">
-                                        <rect key="frame" x="338" y="204" width="56" height="30"/>
+                                        <rect key="frame" x="338" y="154" width="56" height="30"/>
                                         <state key="normal" title="Ver más"/>
                                         <connections>
                                             <action selector="btnVermas:" destination="BYZ-38-t0r" eventType="touchUpInside" id="baX-kB-yGR"/>
                                         </connections>
                                     </button>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CTk-qp-sil">
-                                        <rect key="frame" x="87" y="311" width="240" height="189"/>
+                                        <rect key="frame" x="87" y="261" width="240" height="189"/>
                                         <color key="backgroundColor" systemColor="systemBlueColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="189" id="GUA-FV-bvZ"/>
@@ -79,21 +88,21 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dYh-xy-Kxz">
-                                        <rect key="frame" x="20" y="548" width="177" height="284.5"/>
+                                        <rect key="frame" x="20" y="498" width="177" height="284.5"/>
                                         <string key="text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MBQ-BG-mzv">
-                                        <rect key="frame" x="217" y="548" width="177" height="284.5"/>
+                                        <rect key="frame" x="217" y="498" width="177" height="284.5"/>
                                         <string key="text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="i4v-7X-1iH">
-                                        <rect key="frame" x="20" y="892" width="374" height="34"/>
+                                        <rect key="frame" x="20" y="842" width="374" height="34"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="34" id="zVb-Dr-fQH"/>
                                         </constraints>
@@ -148,6 +157,7 @@
                             <constraint firstItem="1Dl-4L-jRJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ppk-r9-1bb"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Lra-cx-SCj"/>
                     <size key="freeformSize" width="414" height="1000"/>
                     <connections>
                         <outlet property="bottomScrollConst" destination="Xdx-em-YUX" id="awS-75-6kl"/>
@@ -160,6 +170,96 @@
                         <action selector="tapToClodeKeyboard:" destination="BYZ-38-t0r" id="H4r-rX-ec5"/>
                     </connections>
                 </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1442.0289855072465" y="77.678571428571431"/>
+        </scene>
+        <!--View Controller2-->
+        <scene sceneID="GyU-Fc-Cb3">
+            <objects>
+                <viewController id="awd-Jx-gao" customClass="ViewController2" customModule="EP_Lizama" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dC6-vp-pNx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V4r-Ea-aQx">
+                                <rect key="frame" x="20" y="88" width="156" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="vJ6-Gk-xkT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="&lt;-"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Opcion 1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gvR-Jf-mka">
+                                <rect key="frame" x="176" y="88" width="218" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="lUe-bV-yn4"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="V4r-Ea-aQx" firstAttribute="leading" secondItem="lUe-bV-yn4" secondAttribute="leading" constant="20" id="6fw-Vk-2CK"/>
+                            <constraint firstItem="gvR-Jf-mka" firstAttribute="top" secondItem="V4r-Ea-aQx" secondAttribute="top" id="Bp8-ns-pdt"/>
+                            <constraint firstItem="V4r-Ea-aQx" firstAttribute="top" secondItem="lUe-bV-yn4" secondAttribute="top" id="YQn-Bg-WgQ"/>
+                            <constraint firstItem="gvR-Jf-mka" firstAttribute="width" secondItem="V4r-Ea-aQx" secondAttribute="width" multiplier="1.4" id="dr7-Wz-TsM"/>
+                            <constraint firstItem="gvR-Jf-mka" firstAttribute="leading" secondItem="V4r-Ea-aQx" secondAttribute="trailing" id="egb-AF-68H"/>
+                            <constraint firstItem="lUe-bV-yn4" firstAttribute="trailing" secondItem="gvR-Jf-mka" secondAttribute="trailing" constant="20" id="hkf-jf-TEC"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="hcD-Kv-B28"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KVA-4P-98d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2260.8695652173915" y="43.526785714285715"/>
+        </scene>
+        <!--View Controller4-->
+        <scene sceneID="tzX-IH-T3l">
+            <objects>
+                <viewController id="L9e-zq-zMT" customClass="ViewController4" customModule="EP_Lizama" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dm7-tF-5wi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="idg-eR-Sfm"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="PCA-Ov-hIY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ICt-f5-CQY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1441" y="787"/>
+        </scene>
+        <!--View Controller3-->
+        <scene sceneID="LAk-mL-ZvJ">
+            <objects>
+                <viewController id="UKd-bp-0Wg" customClass="ViewController3" customModule="EP_Lizama" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2bX-Ck-ovs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="hRO-t1-uJ2"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="gfg-xI-MKE"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y7k-2P-mTg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3002.898550724638" y="144.64285714285714"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="39M-xX-HOk">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jCY-XC-mLP" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="g7R-6R-77c">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="eiG-e9-CgD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gqC-3O-Z2Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="531.8840579710145" y="77.678571428571431"/>
         </scene>
